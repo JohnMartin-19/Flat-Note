@@ -16,7 +16,7 @@ function EditedUni({addedUnis}){
                    <small>{university.alpha_two_code}</small>
                    <small>{university.web_pages}</small>
            </div>
-           <button type="submit" class="btn btn-danger" style={{width:'40%', textAlign:'center'}}>Edit Uni</button> 
+           <button type="submit" class="btn btn-success" style={{width:'40%', textAlign:'center'}}>Edit Uni</button> 
            <br />
 
               
