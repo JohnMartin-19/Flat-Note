@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
 import './App.css';
-
+import Header from './header';
 function App() {
   useEffect(()=> {
     fetch("http://localhost:8000/Universities/")
@@ -12,7 +12,8 @@ function App() {
   },[])
   return (
     <div className="App">
-      <h1>Hello John!</h1>
+      <h1>Hello There!</h1>
+      <Header />
     </div>
   );
 }
