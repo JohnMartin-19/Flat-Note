@@ -3,8 +3,9 @@ import React from "react";
 
 function Header(){
     return (
-        <div>
-            <h1 style={{textAlign: "center", color:"grey" }}>Welcome To My FlatUniApp</h1>
+        <div style={{backgroundColor: 'maroon',padding: '15px', borderRadius:'10px' }}>
+            <h1 style={{textAlign: "center", color:"black" }}>Welcome To My FlatUniApp</h1>
+                
         </div>
     )
 }

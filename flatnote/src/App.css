@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+.row {
+  display: flex;
+  border: black 5px;
+}
+
+.column {
+  flex: 50%;
+  border: black 5px;
+}
+
+/* width */
+.column #1::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.column #1::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.column #1::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.column #1::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
