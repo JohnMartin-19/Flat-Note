@@ -25,8 +25,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <br />
       <div class="row">
-                 <div class="column" id='1' style={{ color:'white',backgroundColor:'#17160d',borderRadius:'30px',width:'45%', height:'50%',scrollbarWidth:'10px',scroll:'smooth'}}>
+                 <div class="column" id='1' style={{ color:'white',backgroundColor:'rgb(9, 70, 9)',borderRadius:'30px',width:'45%', height:'50%',scrollbarWidth:'10px',scroll:'smooth'}}>
                   <br />
                   <Search />
                   <br />
@@ -36,7 +37,7 @@ function App() {
                   </div>
                     <UniList universities={universities} onAdd={onAdd}/>
                   </div>
-                 <div class="column" id='2' style={{color:'white',backgroundColor:'#17160d', borderRadius:'30px'}}>
+                 <div class="column" id='2' style={{color:'white',backgroundColor:'rgb(126, 201, 126)', borderRadius:'30px'}}>
                   <br />
                   <h3>Edit section</h3>
                   <EditedUni addedUnis={addedUnis} />

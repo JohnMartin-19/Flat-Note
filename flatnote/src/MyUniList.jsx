@@ -7,7 +7,7 @@ function UniList({universities, setUniversities, onAdd}){
                  <div id="data">
                 {universities.map((university) =>(
                     <div key={university.id}>
-                        <div class="card" onClick={() => onAdd(university)} style={{color:'black',borderRadius:'15px',textAlign:'center'}}>
+                        <div class="card " onClick={() => onAdd(university)} style={{color:'black',borderRadius:'15px',textAlign:'center'}}>
                             <h6  >{university.name}</h6>
                             <small>{university.country}</small>
                             <small>{university.alpha_two_code}</small>
