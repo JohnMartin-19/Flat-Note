@@ -30,7 +30,10 @@ function App() {
                   <br />
                   <Search />
                   <br />
+                  <div class='top' style={{display:'flex', margin:'10px'}}>
                   <h3>University List</h3>
+                  <button class='btn btn-success'>Add Uni</button>
+                  </div>
                     <UniList universities={universities} onAdd={onAdd}/>
                   </div>
                  <div class="column" id='2' style={{color:'white',backgroundColor:'#17160d', borderRadius:'30px'}}>
