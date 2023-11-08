@@ -41,6 +41,11 @@
   border: black 5px;
 }
 
+.top{
+  display: inline-flex;
+  padding: 5px;
+  margin-right: 15px;
+}
 .column {
   flex: 50%;
   border: black 5px;
