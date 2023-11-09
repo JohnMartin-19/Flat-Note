@@ -28,10 +28,11 @@ function App() {
      university.id))
   }
   function edit(){
-    
+
     prompt('Add Comment!')
     return(
-      console.log(prompt)
+      
+      <div></div>
     )
 
 }
