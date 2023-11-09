@@ -1,13 +1,21 @@
 
-import React,{ useState,useEffect }  from 'react'; 
+import React,{ useState,useEffect,Switch }  from 'react'; 
 import './App.css';
 import Header from './header';
 import UniList from './MyUniList';
 import Search from './search';
 import EditedUni from './EditUni';
+import Landing from './LandingPg';
+import {Route} from 'react-router-dom';
+
+
+
+
 function App() {
   const [universities, setUniversities] = useState([])
   const [addedUnis, setAddedUnis] = useState([])
+  const [setPage] = useState('/')
+
   useEffect(()=> {
     fetch("http://localhost:8000/Universities/")
       .then(response => response.json())
@@ -39,12 +47,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <div><Header/></div>
+      <div><Landing/></div>
       <br />
       <div class="row">
                  <div class="column" id='1' style={{ color:'white',backgroundColor:'rgb(9, 70, 9)',borderRadius:'30px',width:'45%', height:'50%',scrollbarWidth:'10px',scroll:'smooth'}}>
                   <br />
-                  <Search />
+                  <Search universities={universities}/>
                   <br />
                   <div class='top'  style={{ margin:'30px 30px', borderSpacing:'10px' }}>
                   <h3>University List</h3> 

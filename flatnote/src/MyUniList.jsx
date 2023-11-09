@@ -2,7 +2,8 @@ import React from "react";
 import './MyUniList.css';
 
 function UniList({universities, setUniversities, onAdd}){
-        function handleAddUni(university){
+    
+        /*function handleAddUni(university){
             return(
           <div>
             <h1>Add University</h1>
@@ -16,6 +17,7 @@ function UniList({universities, setUniversities, onAdd}){
           </div>
             )
         }
+        */
     return(
         <div className="section">
                  <div id="data">
