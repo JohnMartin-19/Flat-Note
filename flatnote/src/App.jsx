@@ -28,9 +28,10 @@ function App() {
      university.id))
   }
   function edit(){
+    
     prompt('Add Comment!')
     return(
-      console.log(prompt.value)
+      console.log(prompt)
     )
 
 }
@@ -46,7 +47,7 @@ function App() {
                   <br />
                   <div class='top'  style={{ margin:'30px 30px', borderSpacing:'10px' }}>
                   <h3>University List</h3> 
-                  <button class='btn btn-success' onClick={handleAddUni}>Add Uni</button>
+                  <button class='btn btn-success' >Add Uni</button>
                   </div>
                     <UniList universities={universities} onAdd={onAdd}/>
                   </div>
