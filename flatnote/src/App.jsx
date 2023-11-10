@@ -6,6 +6,7 @@ import UniList from './MyUniList';
 import Search from './search';
 import EditedUni from './EditUni';
 import Landing from './LandingPg';
+import Add from './add';
 
 
 
@@ -55,9 +56,11 @@ function App() {
                   <br />
                   <Search universities={universities}/>
                   <br />
+                  <br />
+                  <Add />
                   <div class='top'  style={{ margin:'30px 30px', borderSpacing:'10px' }}>
-                  <h3>University List</h3> 
-                  <button class='btn btn-success' >Add Uni</button>
+                  <h3>University List</h3>
+                  <br /> 
                   </div>
                     <UniList universities={universities} onAdd={onAdd}/>
                   </div>
