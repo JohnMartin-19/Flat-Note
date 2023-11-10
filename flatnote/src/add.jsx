@@ -4,7 +4,6 @@ import UniList from "./MyUniList";
 
 function Add(){
     function handleAdd(){
-    
         return(
         <div>
             <form action="submit">
