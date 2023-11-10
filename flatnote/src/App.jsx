@@ -1,12 +1,12 @@
 
-import React,{ useState,useEffect,Switch }  from 'react'; 
+import React,{ useState,useEffect}  from 'react'; 
 import './App.css';
 import Header from './header';
 import UniList from './MyUniList';
 import Search from './search';
 import EditedUni from './EditUni';
 import Landing from './LandingPg';
-import {Route} from 'react-router-dom';
+
 
 
 
@@ -14,7 +14,7 @@ import {Route} from 'react-router-dom';
 function App() {
   const [universities, setUniversities] = useState([])
   const [addedUnis, setAddedUnis] = useState([])
-  const [setPage] = useState('/')
+  
 
   useEffect(()=> {
     fetch("http://localhost:8000/Universities/")

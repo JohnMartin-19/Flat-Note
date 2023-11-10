@@ -1,7 +1,7 @@
 import React from "react";
 import './MyUniList.css';
 
-function UniList({universities, setUniversities, onAdd}){
+function UniList({universities, onAdd}){
     
         /*function handleAddUni(university){
             return(

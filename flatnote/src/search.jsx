@@ -1,6 +1,6 @@
 import React from "react";
-
-function Search(){
+import UniList from "./MyUniList";
+function Search({universities}){
     return(
         <input type="text" placeholder="search" />
     )
